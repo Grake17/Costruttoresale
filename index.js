@@ -45,7 +45,7 @@ client.on('voiceStateUpdate', (oldMember, newMember) => {
                 channel.edit({
                     parent: config.parentetenda,
                     position: newUserChannel.position, 
-                    name: "📚Sala #"+u
+                    name: "📚Biblioteca #"+u
 
                 })
                 newMember.setVoiceChannel(channel)
@@ -82,7 +82,7 @@ client.on('voiceStateUpdate', (oldMember, newMember) => {
         }
          
         //Cancella Vocale Sindacati
-        if(name.startsWith("📚Sala")){                   
+        if(name.startsWith("📚Biblioteca")){                   
             if(count == 0){                                
                 oldMember.voiceChannel.delete("ok")
             }
@@ -133,7 +133,7 @@ client.on('voiceStateUpdate', (oldMember, newMember) => {
             }
             
             //Scrpit Vocale Sindacati
-            if(name.startsWith("📚Sala")){                                         
+            if(name.startsWith("📚Biblioteca")){                                         
                 if(count == 0){                                       
                     oldMember.voiceChannel.delete("ok")
                 }
@@ -149,7 +149,7 @@ client.on('voiceStateUpdate', (oldMember, newMember) => {
                     channel.edit({
                         parent: config.parentetenda,
                         position: newUserChannel.position, 
-                        name: "📚Sala #"+u
+                        name: "📚Biblioteca #"+u
     
                     })
                     newMember.setVoiceChannel(channel)
